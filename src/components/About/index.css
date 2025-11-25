@@ -1,0 +1,221 @@
+.about {
+	padding: 2rem 2.5rem;
+}
+
+/* Mission Block */
+.about .mission-block {
+	padding: 2rem 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.about .mission-block h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 1.5rem;
+	color: #111;
+}
+
+.about .mission-content {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.about .mission-content p {
+	font-size: 1rem;
+	line-height: 1.7;
+	color: #555;
+	margin-bottom: 1rem;
+}
+
+.about .mission-content p:last-child {
+	margin-bottom: 0;
+}
+
+/* Founder Profile */
+.about .founder-profile {
+	padding: 2rem 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.about .founder-profile h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 2rem;
+	color: #111;
+}
+
+.about .founder-content {
+	display: flex;
+	gap: 2rem;
+	align-items: flex-start;
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+.about .founder-portrait {
+	flex-shrink: 0;
+}
+
+.about .portrait-placeholder {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #673ab8 0%, #8e54e9 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+	font-weight: 700;
+	color: white;
+	box-shadow: 0 4px 12px rgba(103, 58, 184, 0.2);
+}
+
+.about .founder-bio {
+	flex: 1;
+}
+
+.about .founder-bio p {
+	font-size: 0.95rem;
+	line-height: 1.7;
+	color: #555;
+	margin-bottom: 1rem;
+}
+
+.about .founder-bio p:first-child {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #333;
+}
+
+.about .founder-bio p:last-child {
+	margin-bottom: 0;
+}
+
+/* Principles Section */
+.about .principles {
+	padding: 2rem 0 1rem;
+	text-align: center;
+}
+
+.about .principles h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+	color: #111;
+}
+
+.about .principles-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1.5rem;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.about .principle-card {
+	padding: 1.5rem 1rem;
+	border-radius: 0.75rem;
+	background-color: #f9f9f9;
+	border: 1px solid #e5e5e5;
+	transition: all 0.3s ease;
+}
+
+.about .principle-card:hover {
+	border-color: #673ab8;
+	box-shadow: 0 4px 12px rgba(103, 58, 184, 0.15);
+	transform: translateY(-2px);
+}
+
+.about .principle-icon {
+	width: 60px;
+	height: 60px;
+	margin: 0 auto 1rem;
+	color: #673ab8;
+}
+
+.about .principle-icon svg {
+	width: 100%;
+	height: 100%;
+}
+
+.about .principle-card h3 {
+	font-size: 1.25rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	color: #111;
+}
+
+.about .principle-card p {
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: #666;
+	margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.about {
+		padding: 1.5rem;
+	}
+
+	.about .mission-block h2,
+	.about .founder-profile h2,
+	.about .principles h2 {
+		font-size: 1.75rem;
+	}
+
+	.about .founder-content {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 1.5rem;
+	}
+
+	.about .portrait-placeholder {
+		width: 80px;
+		height: 80px;
+		font-size: 2.5rem;
+	}
+
+	.about .principles-grid {
+		grid-template-columns: 1fr;
+		gap: 1.25rem;
+	}
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+	.about .mission-block,
+	.about .founder-profile {
+		border-bottom-color: #333;
+	}
+
+	.about .mission-block h2,
+	.about .founder-profile h2,
+	.about .principles h2,
+	.about .principle-card h3 {
+		color: #f5f5f5;
+	}
+
+	.about .mission-content p,
+	.about .founder-bio p,
+	.about .principle-card p {
+		color: #aaa;
+	}
+
+	.about .founder-bio p:first-child {
+		color: #ccc;
+	}
+
+	.about .principle-card {
+		background-color: #252525;
+		border-color: #333;
+	}
+
+	.about .principle-card:hover {
+		border-color: #673ab8;
+		box-shadow: 0 4px 12px rgba(103, 58, 184, 0.25);
+	}
+}
